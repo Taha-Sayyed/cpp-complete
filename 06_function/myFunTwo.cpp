@@ -1,3 +1,5 @@
+//Pass by value demonstration
+
 #include <iostream>
 
 using namespace std;
@@ -11,7 +13,7 @@ void pourChai(int cups){
 int main(){
     
     int cups = 2;
-    pourChai(cups);
+    pourChai(cups); //copy of 'cups' passes
     cout << "Total cups are " << cups << endl;
     return 0;
 }
