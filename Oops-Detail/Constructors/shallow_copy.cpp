@@ -14,13 +14,16 @@ class Car{
             carName=name;
             carColor=color;
         }
+        ~Car(){
+            cout<<"\nDestructor Called"<<endl;
+        }
 };
 
 
 int main(){
 
     Car hondaCar("Honda city",{"Red","Blue"});
-
+    //shallowCopy is not a copy — it is just a pointer to the same object
     Car* shallowCopy=&hondaCar;
     shallowCopy->carColor={"Green","Red","Blue"};
 
