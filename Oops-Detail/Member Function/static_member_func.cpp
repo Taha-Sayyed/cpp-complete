@@ -20,7 +20,7 @@ class Student{
 };
 
 
-int Student::count=0;
+int Student::count=0; //To allocate storage for it, C++ requires a separate definition outside the class.
 
 int main(){
 
