@@ -32,7 +32,7 @@ int main(){
     
     Derived d;
 
-    Base& ref=d;
+    Base& ref=d; // reference to abstract class type
     ref.displayDetail();
      
     return 0;
