@@ -7,8 +7,8 @@ class Base{
         Base(){
             cout<<"Base constructor is called"<<endl;
         }
-        //Destructor has to be made virtual, otherwise the Derive destructor will not be call.
         //Since here base class pointer is use to create a Derive class object
+        //Destructor has to be made virtual, otherwise the Derive destructor will not be call.
         //According to c++, compiler will not make destructor virtual even if there are virtual function in the base class
 
         virtual ~Base(){
@@ -28,7 +28,7 @@ class Derived:public Base{
 
 int main(){
     
-    Base* b=new Derived();
-    delete b;
+    Base* b=new Derived(); 
+    delete b;//Deallocating the memory the object was pointing to
     return 0;
 }
