@@ -32,6 +32,7 @@ int main(){
     
     Base* b=new Derived(); //pointer to abstract class type
     b->displayDetail();
+    delete b;
      
     return 0;
 }
