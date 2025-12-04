@@ -14,6 +14,7 @@ int main(){
                       //can be assigned to a pointer that is also declared as `const`
 
     const char* bptr=mybuf;
+    // *btr='t'; //Give error. for detail refer notes
 
     return 0;
 }
