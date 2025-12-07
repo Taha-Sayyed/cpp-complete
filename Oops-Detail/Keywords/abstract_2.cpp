@@ -6,7 +6,7 @@ class Base{
         Base(){
             cout<<"Base constructor is called"<<endl;
         }
-        virtual void displayDetail()=0;
+        virtual void displayDetail()=0; //pure virtual function
         
         virtual ~Base(){
             cout<<"Base Destructor is called"<<endl;
